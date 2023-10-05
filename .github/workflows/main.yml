@@ -11,7 +11,7 @@ jobs:
        with:
         ##browser: chrome
         headless: true
-        #build: npm run build
+        build: npm run build
         start: npm run start
         wait-on: "http://localhost:3000/login"
      - name: Set output
