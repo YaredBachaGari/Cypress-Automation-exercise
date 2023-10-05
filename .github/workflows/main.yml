@@ -6,13 +6,11 @@ jobs:
    steps:
      - name: Checkout
        uses: actions/checkout@v2
-    #  - name: Install modules
-    #    uses: npm ci
      - name: Cypress run
        uses: cypress-io/github-action@v3
        with:
-        #browser: chrome
+        browser: chrome
         headless: true
-        #build: npm run build
+        build: npm run build
         start: npm run start
         wait-on: "http://localhost:3000/login"
